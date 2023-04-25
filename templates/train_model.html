@@ -1,0 +1,40 @@
+<center>
+    <h1>Training Report</h1>
+    <h3>Model Name: {{final['model_name']}}</h3>
+    <table>
+        
+        <tr>
+            <th>Accuracy: </th>
+            <td>{{final['report']['accuracy']}}</td>
+        </tr>
+        <!-- <tr>
+            <th>Classification Report</th>
+            <td>{{final['report']['performance']}}</td>
+        </tr> -->
+        <tr>
+
+            <th>ROC AUC SCORE: </th>
+        
+            <td>{{final['report']['auc']}}</td>
+        </tr>
+        <tr>
+            <th>Confusion Matrix: </th>
+            <td>{{final['report']['cm']}}</td>
+        </tr>
+        <tr>
+            <th>Precision: </th>
+            <td>{{final['report']['precision']}}</td>
+
+        </tr>
+        <!-- <tr>
+            <th>Recall: </th>
+            <td>{{final['report']['recall']}}</td>
+        </tr>
+        <tr>
+            <th>F1 Score: </th>
+            <td>{{final['report']['f1']}}</td>
+        </tr> -->
+        
+    </table>
+    
+    </center>

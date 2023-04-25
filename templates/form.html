@@ -1,0 +1,165 @@
+<html>
+    <body>
+        <h1 style="text-align: center;"> Previous Months CreditCard usage Details</h1>
+        <form action="{{url_for('predict')}}" method="POST" style="text-align: center;">
+            <label for="limit_bal">Limit Balance:</label>
+            <input type="number" id="limit_bal" name="limit_bal" step="0.01" required><br><br>
+          
+            <label for="sex">Sex:</label>
+            <select id="sex" name="sex" required>
+              <option value="">Select</option>
+              <option value="1">Male</option>
+              <option value="2">Female</option>
+            </select><br><br>
+          
+            <label for="education">Education:</label>
+            <select id="education" name="education" required>
+              <option value="">Select</option>
+              <option value="1">Graduate school</option>
+              <option value="2">University</option>
+              <option value="3">High school</option>
+              <option value="4">Others</option>
+            </select><br><br>
+          
+            <label for="marriage">Marriage:</label>
+            <select id="marriage" name="marriage" required>
+              <option value="">Select</option>
+              <option value="1">Married</option>
+              <option value="2">Single</option>
+              <option value="3">Others</option>
+            </select><br><br>
+          
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br><br>
+          
+            <label for="pay_1">Payment Status (Month 1):</label>
+            <select id="pay_1" name="pay_1" required>
+              <option value="">Select</option>
+              <option value="-2">No consumption</option>
+              <option value="-1">Paid in full</option>
+              <option value="0">Use of revolving credit</option>
+              <option value="1">Payment delay for one month</option>
+              <option value="2">Payment delay for two months</option>
+              <option value="3">Payment delay for three months</option>
+              <option value="4">Payment delay for four months</option>
+              <option value="5">Payment delay for five months</option>
+              <option value="6">Payment delay for six months</option>
+              <option value="7">Payment delay for seven months</option>
+              <option value="8">Payment delay for eight months</option>
+            </select><br><br>
+          
+            <label for="pay_2">Payment Status (Month 2):</label>
+            <select id="pay_2" name="pay_2" required>
+              <option value="">Select</option>
+              <option value="-2">No consumption</option>
+              <option value="-1">Paid in full</option>
+              <option value="0">Use of revolving credit</option>
+              <option value="1">Payment delay for one month</option>
+              <option value="2">Payment delay for two months</option>
+              <option value="3">Payment delay for three months</option>
+              <option value="4">Payment delay for four months</option>
+              <option value="5">Payment delay for five months</option>
+              <option value="6">Payment delay for six months</option>
+              <option value="7">Payment delay for seven months</option>
+              <option value="8">Payment delay for eight months</option>
+            </select><br><br>
+            <label for="pay_3">Payment Status (Month 3):</label>
+            <select id="pay_3" name="pay_3" required>
+              <option value="">Select</option>
+              <option value="-2">No consumption</option>
+              <option value="-1">Paid in full</option>
+              <option value="0">Use of revolving credit</option>
+              <option value="1">Payment delay for one month</option>
+              <option value="2">Payment delay for two months</option>
+              <option value="3">Payment delay for three months</option>
+              <option value="4">Payment delay for four months</option>
+              <option value="5">Payment delay for five months</option>
+              <option value="6">Payment delay for six months</option>
+              <option value="7">Payment delay for seven months</option>
+              <option value="8">Payment delay for eight months</option>
+            </select><br><br>
+            <label for="pay_4">Payment Status (Month 4):</label>
+            <select id="pay_4" name="pay_4" required>
+              <option value="">Select</option>
+              <option value="-2">No consumption</option>
+              <option value="-1">Paid in full</option>
+              <option value="0">Use of revolving credit</option>
+              <option value="1">Payment delay for one month</option>
+              <option value="2">Payment delay for two months</option>
+              <option value="3">Payment delay for three months</option>
+              <option value="4">Payment delay for four months</option>
+              <option value="5">Payment delay for five months</option>
+              <option value="6">Payment delay for six months</option>
+              <option value="7">Payment delay for seven months</option>
+              <option value="8">Payment delay for eight months</option>
+            </select><br><br>
+            <label for="pay_5">Payment Status (Month 5):</label>
+            <select id="pay_5" name="pay_5" required>
+              <option value="">Select</option>
+              <option value="-2">No consumption</option>
+              <option value="-1">Paid in full</option>
+              <option value="0">Use of revolving credit</option>
+              <option value="1">Payment delay for one month</option>
+              <option value="2">Payment delay for two months</option>
+              <option value="3">Payment delay for three months</option>
+              <option value="4">Payment delay for four months</option>
+              <option value="5">Payment delay for five months</option>
+              <option value="6">Payment delay for six months</option>
+              <option value="7">Payment delay for seven months</option>
+              <option value="8">Payment delay for eight months</option>
+            </select><br><br>
+            <label for="pay_6">Payment Status (Month 6):</label>
+            <select id="pay_6" name="pay_6" required>
+              <option value="">Select</option>
+              <option value="-2">No consumption</option>
+              <option value="-1">Paid in full</option>
+              <option value="0">Use of revolving credit</option>
+              <option value="1">Payment delay for one month</option>
+              <option value="2">Payment delay for two months</option>
+              <option value="3">Payment delay for three months</option>
+              <option value="4">Payment delay for four months</option>
+              <option value="5">Payment delay for five months</option>
+              <option value="6">Payment delay for six months</option>
+              <option value="7">Payment delay for seven months</option>
+              <option value="8">Payment delay for eight months</option>
+            </select><br><br>
+
+            <label for="bill_amt1">Bill Amount (Month 1):</label>
+            <input type="number" id="bill_amt1" name="bill_amt1" step="0.01" required><br><br>
+
+            <label for="bill_amt2">Bill Amount (Month 2):</label>
+            <input type="number" id="bill_amt2" name="bill_amt2" step="0.01" required><br><br>
+
+            <label for="bill_amt3">Bill Amount (Month 3):</label>
+            <input type="number" id="bill_amt3" name="bill_amt3" step="0.01" required><br><br>
+
+            <label for="bill_amt4">Bill Amount (Month 4):</label>
+            <input type="number" id="bill_amt4" name="bill_amt4" step="0.01" required><br><br>
+
+            <label for="bill_amt5">Bill Amount (Month 5):</label>
+            <input type="number" id="bill_amt5" name="bill_amt5" step="0.01" required><br><br>
+
+            <label for="bill_amt6">Bill Amount (Month 6):</label>
+            <input type="number" id="bill_amt6" name="bill_amt6" step="0.01" required><br><br>
+
+            <label for="pay_amt1">Payment Amount (Month 1):</label>
+            <input type="number" id="pay_amt1" name="pay_amt1" step="0.01" required><br><br>
+
+            <label for="pay_amt2">Payment Amount (Month 2):</label>
+            <input type="number" id="pay_amt2" name="pay_amt2" step="0.01" required><br><br>
+
+            <label for="pay_amt3">Payment Amount (Month 3):</label>
+            <input type="number" id="pay_amt3" name="pay_amt3" step="0.01" required><br><br>
+
+            <label for="pay_amt4">Payment Amount (Month 4):</label>
+            <input type="number" id="pay_amt4" name="pay_amt4" step="0.01" required><br><br>
+
+            <label for="pay_amt5">Payment Amount (Month 5):</label>
+            <input type="number" id="pay_amt5" name="pay_amt5" step="0.01" required><br><br>
+
+            <label for="pay_amt6">Payment Amount (Month 6):</label>
+            <input type="number" id="pay_amt6" name="pay_amt6" step="0.01" required><br><br>
+            <div style="clear:both;"></div>
+            <input type="submit" value="Submit">
+    </body>
+</html>
