@@ -1,4 +1,4 @@
-## End to End ML Project on Default of Credit Card Clients Prediction(Classification Probelm)
+## End to End ML Project on Default of Credit Card Clients Prediction(Classification Problem)
 
 ### created an environment
 ```
